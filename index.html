@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="custom.css" />
+  <title>Catálogo de productos de cocina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="contactoWhats">
+    <a href="https://api.whatsapp.com/send?phone=51973048241&text=Hola%20WhatsApp" target="_blank">
+      <img src="imagenes/WhatsApp.svg" alt="Contacto por WhatsApp">
+    </a>
+  </div>
+
+  <header>
+    <h1>Culinova</h1>
+    <h2>Productos de Calidad para tu cocina</h2>
+
+  </header>
+  <!-- Barra de navegacion -->
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Culinova</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Registrate</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal"
+            data-bs-target="#carritoModal">Carrito</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal Carrito-->
+  <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carrito">
+            <img id="carritoVacio" class="img-fluid mx-auto d-block" src="Imagenes/carrito.svg" alt="Carrito Vacio">
+            <figcaption class="text-center">Actualmente usted no cuenta con ningún producto en su carrito</figcaption>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Cotizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="Productos container">
+    <section class="row" id="catalogo">
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/olla.jpg" alt="Olla">
+        <h3>Olla metalica negra</h3>
+        <p>
+          <span class="precioOriginal">S/ 90.00</span> <span class="precioDescuento">-50%</span>
+          <br><span class="precioFinal">S/ 45.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/sarten.jpg" alt="Sarten">
+        <h3>Sarten Negra</h3>
+        <p>
+          <span class="precioOriginal">S/ 75.00</span> <span class="precioDescuento">-50%</span>
+          <br><span class="precioFinal">S/ 37.50</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/cuchillos.jpg" alt="Cuchillos de Metal">
+        <h3>Cuchillos de Cocina</h3>
+        <p>
+          <span class="precioOriginal">S/ 66.00</span> <span class="precioDescuento">-50%</span>
+          <br><span class="precioFinal">S/ 33.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/tablas.webp" alt="Tabla de Madera">
+        <h3>Tablas de cortar de Madera</h3>
+        <p>
+          <span class="precioOriginal">S/ 24.90</span> <span class="precioDescuento">-50%</span>
+          <br><span class="precioFinal">S/ 12.50</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/Batidoras de mano.webp" alt="Batidora de mano">
+        <h3>Batidora de mano</h3>
+        <p>
+          <span class="precioOriginal">S/ 79.00</span> <span class="precioDescuento">-10%</span>
+          <br><span class="precioFinal">S/ 71.10</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/exprimidor.webp" alt="Exprimidor">
+        <h3>Exprimidor Citrico</h3>
+        <p>
+          <span class="precioOriginal">S/ 89.00</span> <span class="precioDescuento">-42%</span>
+          <br><span class="precioFinal">S/ 52.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/hervidor.webp" alt="Hervidor">
+        <h3>Hervidor Electrico</h3>
+        <p>
+          <span class="precioOriginal">S/ 79.00</span> <span class="precioDescuento">-22%</span>
+          <br><span class="precioFinal">S/ 59.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/tostadora.jpg" alt="Hervidor">
+        <h3>tostadora</h3>
+        <p>
+          <span class="precioOriginal">S/ 200.00</span> <span class="precioDescuento">-10%</span>
+          <br><span class="precioFinal">S/ 180.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/cafetera.jpg" alt="Cafetera">
+        <h3>Cafetera automática</h3>
+        <p>
+          <span class="precioOriginal">S/ 200.00</span> <span class="precioDescuento">-10%</span>
+          <br><span class="precioFinal">S/ 180.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/licuadora.jpg" alt="Licuadora">
+        <h3>Licuadora Oster con vaso de vidrio y control de perilla</h3>
+        <p>
+          <span class="precioOriginal">S/ 219.00</span> <span class="precioDescuento">-25%</span>
+          <br><span class="precioFinal">S/ 186.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/procesador.jpg" alt="Procesador">
+        <h3>Procesador de alimentos</h3>
+        <p>
+          <span class="precioOriginal">S/ 499.00</span> <span class="precioDescuento">-40%</span>
+          <br><span class="precioFinal">S/ 299.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+      <article class="col-6 clo-md-4 col-lg-3">
+        <img class="imgProduct" src="imagenes/bandejas.jpg" alt="bandejas">
+        <h3>Procesador de alimentos</h3>
+        <p>
+          <span class="precioOriginal">S/ 89.00</span> <span class="precioDescuento">-10%</span>
+          <br><span class="precioFinal">S/ 79.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar al carrito</button>
+      </article>
+    </section>
+  </main>
+  <!-- Agrega más productos según sea necesario -->
+  <footer>© Creado por Sebastian Horna Niño</footer>
+
+  <!-- Codigo JavaScript Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
